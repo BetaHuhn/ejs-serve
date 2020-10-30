@@ -3,7 +3,7 @@ const WebSocket = require('ws')
 const reloadScript = require('./utils/reloadScript')
 const insertScript = require('./utils/insertScript')
 
-class Serve {
+class Server {
 	constructor(port) {
 		this.port = port || 8080
 		this.html = ''
@@ -69,4 +69,4 @@ class Serve {
 	}
 }
 
-module.exports = Serve
+module.exports = Server

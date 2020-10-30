@@ -1,7 +1,7 @@
 const fs = require('fs')
 const runningAt = require('running-at')
-const Serve = require('./serve')
-const Watcher = require('./watch')
+const Server = require('./server')
+const Watcher = require('./watcher')
 const log = require('./utils/log')
 
 class Runner {
@@ -28,7 +28,7 @@ class Runner {
 		}
 
 		log.info(`[ejs-serve] starting...`)
-		const server = new Serve(port)
+		const server = new Server(port)
 
 		const network = runningAt(port).network
 
