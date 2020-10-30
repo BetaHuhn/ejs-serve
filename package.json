@@ -1,0 +1,24 @@
+{
+  "name": "ejs-serve",
+  "version": "0.1.0",
+  "description": "",
+  "bin": "./src/index.js",
+  "scripts": {
+    "lint": "eslint ./src/",
+    "example": "./src/index.js -f ./example/index.ejs -d ./example/data.json"
+  },
+  "keywords": [],
+  "author": "Maximilian Schiller <schiller@mxis.ch>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^6.2.0",
+    "ejs": "^3.1.5",
+    "running-at": "^0.3.5",
+    "ws": "^7.3.1"
+  },
+  "devDependencies": {
+    "@betahuhn/eslint-config-node": "^0.1.0",
+    "eslint": "^7.12.1"
+  }
+}
