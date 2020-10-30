@@ -5,12 +5,17 @@ const Watcher = require('./watcher')
 const log = require('./utils/log')
 
 class Runner {
-	constructor(args) {
+	constructor(args, program) {
 		this.args = args || []
+		this.program = program
 	}
 
 	async serve() {
 		const { file, data, port } = this.args
+
+		if (!file) {
+			return this.program.help()
+		}
 
 		if (!fs.existsSync(file)) {
 			return log.fail(`error: file not found => ${ file }`)

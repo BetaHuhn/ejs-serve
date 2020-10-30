@@ -6,20 +6,22 @@ const Runner = require('./runner')
 
 program
 	.version(packageJson.version, '-v, --version')
+	.usage('-f <filename> -d <json string|file> -p <port>')
+	.description('Build, watch and serve your EJS templates in your browser.')
 
 program
 	.option('-f, --file <path>', 'path to ejs file')
 	.option('-d, --data <json>', 'JSON string or path to json file')
 	.option('-p, --port <number>', 'port on which to serve the file', 8080)
-	.action((args, program) => {
+	.action((args) => {
 		const runner = new Runner(args, program)
 		runner.serve()
 	})
 
-program.on('command:*', (operands) => {
-	console.error(`error: unknown command '${ operands[0] }'\n`)
-	program.help()
-	process.exitCode = 1
+program.on('--help', () => {
+	console.log('')
+	console.log('Example call:')
+	console.log('  $ ejs-serve --file index.ejs --data options.json --port 3000')
 })
 
 program.parse(process.argv)
