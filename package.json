@@ -1,13 +1,22 @@
 {
   "name": "ejs-serve",
   "version": "0.1.0",
-  "description": "",
+  "description": "Build, watch and serve your EJS templates in your browser.",
   "bin": "./src/index.js",
   "scripts": {
     "lint": "eslint ./src/",
     "example": "./src/index.js -f ./example/index.ejs -d ./example/data.json"
   },
-  "keywords": [],
+  "keywords": [
+    "ejs",
+    "ejs-templates",
+    "ejs-template-engine",
+    "ejs-cli",
+    "build-tool",
+    "reload",
+    "http",
+    "development"
+  ],
   "author": "Maximilian Schiller <schiller@mxis.ch>",
   "license": "MIT",
   "dependencies": {
