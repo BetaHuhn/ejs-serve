@@ -1,12 +1,22 @@
 {
   "name": "ejs-serve",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Build, watch and serve your EJS templates in your browser.",
   "bin": "./src/index.js",
   "scripts": {
     "lint": "eslint ./src/",
     "example": "./src/index.js -f ./example/index.ejs -d ./example/data.json"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BetaHuhn/ejs-serve.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BetaHuhn/ejs-serve/issues"
+  },
+  "homepage": "https://github.com/BetaHuhn/ejs-serve#readme",
+  "author": "Maximilian Schiller <schiller@mxis.ch>",
+  "license": "MIT",
   "keywords": [
     "ejs",
     "ejs-templates",
@@ -17,8 +27,6 @@
     "http",
     "development"
   ],
-  "author": "Maximilian Schiller <schiller@mxis.ch>",
-  "license": "MIT",
   "dependencies": {
     "chalk": "^4.1.0",
     "commander": "^6.2.0",
