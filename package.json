@@ -1,6 +1,6 @@
 {
   "name": "ejs-serve",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Build, watch and serve your EJS templates in your browser.",
   "bin": "./src/index.js",
   "scripts": {
@@ -35,7 +35,7 @@
     "ws": "^7.3.1"
   },
   "devDependencies": {
-    "@betahuhn/eslint-config-node": "^0.1.0",
-    "eslint": "^7.12.1"
+    "@betahuhn/eslint-config-node": "^0.1.1",
+    "eslint": "^7.14.0"
   }
 }
