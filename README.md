@@ -2,7 +2,7 @@
 
 # ejs-serve
 
-[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/BetaHuhn/ejs-serve/blob/master/LICENSE) ![David](https://img.shields.io/david/betahuhn/ejs-serve) [![npm](https://img.shields.io/npm/v/ejs-serve)](https://www.npmjs.com/package/ejs-serve)
+[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/BetaHuhn/ejs-serve/blob/master/LICENSE) [![npm](https://img.shields.io/npm/v/ejs-serve)](https://www.npmjs.com/package/ejs-serve)
 
 Build, watch and serve your EJS templates in your browser.
 
