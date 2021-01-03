@@ -23,8 +23,6 @@
     "ejs-template-engine",
     "ejs-cli",
     "build-tool",
-    "reload",
-    "http",
     "development"
   ],
   "dependencies": {
@@ -35,7 +33,7 @@
     "ws": "^7.4.1"
   },
   "devDependencies": {
-    "@betahuhn/eslint-config-node": "^0.1.1",
+    "@betahuhn/config": "^1.0.2",
     "eslint": "^7.16.0"
   }
 }
