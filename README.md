@@ -17,6 +17,7 @@ Build, watch and serve your EJS templates in your browser.
 - watches for file changes and reloads your browser automatically
 - no extra files in your working directory
 - also watches for changes in your data
+- can be used in conjunction with [mjml](#generate-email-with-mjml)
 
 ## 🚀 Get started
 
@@ -35,11 +36,12 @@ Usage: ejs-serve -f <filename> -d <json string|file> -p <port>
 Build, watch and serve your EJS templates in your browser.
 
 Options:
-  -f, --file <path>    path to ejs file
-  -d, --data <json>    JSON string or path to json file
-  -p, --port <number>  port on which to serve the file (default: 8080)
-  -v, --version        output the version number
-  -h, --help           display help for command
+  -f, --file <path>       path to ejs file
+  -d, --data <json>       JSON string or path to json file
+  -p, --port <number>     port on which to serve the file (default: 8080)
+  -e, --email [boolean]   render file with mjml (default: false)
+  -v, --version           output the version number
+  -h, --help              display help for command
 ```
 
 ## 🛠️ Examples
@@ -60,6 +62,14 @@ ejs-serve -f index.ejs -d '{"message":"Hello World!"}'
 
 ```shell
 ejs-serve -f index.ejs -d data.json -p 3000
+```
+
+### Generate email with mjml
+
+`ejs-serve` can be used in conjunction with [mjml](https://github.com/mjmlio/mjml) to render your ejs file with data and generate a reponsive email. Use the `-e` option to enable this feature and it will run the rendered ejs file through mjml.
+
+```shell
+ejs-serve -f index.ejs -d data.json -e
 ```
 
 ### Use it in another project
