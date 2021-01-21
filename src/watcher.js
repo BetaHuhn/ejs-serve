@@ -1,18 +1,21 @@
 const ejs = require('ejs')
 const fs = require('fs')
+const mjml = require('mjml')
+
 const log = require('./utils/log')
 
 class Watcher {
-	constructor(file, data, dataFile, server, network) {
+	constructor(file, data, dataFile, email, server, network) {
 		this.file = file
 		this.data = data
 		this.dataFile = dataFile
+		this.email = email
 		this.server = server
 		this.network = network
 	}
 
 	async run() {
-		const html = await ejs.renderFile(this.file, this.data)
+		const html = await this.renderFile()
 		await this.server.start(html)
 
 		this.watchFile()
@@ -28,8 +31,8 @@ class Watcher {
 		fs.watchFile(this.file, { interval: 500 }, async () => {
 			log.info(`[ejs-serve] restarting due to changes...`)
 
-			const newHtml = await ejs.renderFile(this.file, this.data)
-			await this.server.restart(newHtml)
+			const html = await this.renderFile()
+			await this.server.restart(html)
 
 			log.info(`[ejs-serve] watching and serving file '${ this.file }' at ${ this.network }`)
 		})
@@ -47,11 +50,28 @@ class Watcher {
 				process.exit()
 			}
 
-			const newHtml = await ejs.renderFile(this.file, this.data)
-			await this.server.restart(newHtml)
+			const html = await this.renderFile()
+			await this.server.restart(html)
 
 			log.info(`[ejs-serve] watching and serving file '${ this.file }' at ${ this.network }`)
 		})
+	}
+
+	async renderFile() {
+		const rawHtml = await ejs.renderFile(this.file, this.data)
+
+		if (this.email === true) {
+			const result = mjml(rawHtml, { validationLevel: 'skip' })
+
+			if (result.errors.length > 0) {
+				log.fail(result.errors)
+				throw new Error(JSON.stringify(result.errors))
+			}
+
+			return result.html
+		}
+
+		return rawHtml
 	}
 }
 

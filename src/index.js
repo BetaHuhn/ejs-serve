@@ -13,6 +13,7 @@ program
 	.option('-f, --file <path>', 'path to ejs file')
 	.option('-d, --data <json>', 'JSON string or path to json file')
 	.option('-p, --port <number>', 'port on which to serve the file', 8080)
+	.option('-e, --email [boolean]', 'render file with mjml', false)
 	.action((args) => {
 		const runner = new Runner(args, program)
 		runner.serve()

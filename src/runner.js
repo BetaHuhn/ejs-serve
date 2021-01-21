@@ -11,7 +11,7 @@ class Runner {
 	}
 
 	async serve() {
-		const { file, data, port } = this.args
+		const { file, data, port, email } = this.args
 
 		if (!file) {
 			return this.program.help()
@@ -37,7 +37,9 @@ class Runner {
 
 		const network = runningAt(port).network
 
-		const watcher = new Watcher(file, json, dataFile, server, network)
+		if (email === true) log.info(`[ejs-serve] using mjml...`)
+
+		const watcher = new Watcher(file, json, dataFile, email, server, network)
 		watcher.run()
 
 	}
