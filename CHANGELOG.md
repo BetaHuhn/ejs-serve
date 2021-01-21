@@ -1,3 +1,11 @@
+## [v1.1.0] - 2021-01-21
+
+[Release notes](https://github.com/BetaHuhn/ejs-serve/releases/tag/v1.1.0) · [Compare](https://github.com/BetaHuhn/ejs-serve/compare/v1.0.5...v1.1.0) · [Tag](https://github.com/BetaHuhn/ejs-serve/tree/v1.1.0) · Archive ([zip](https://github.com/BetaHuhn/ejs-serve/archive/v1.1.0.zip) · [tar.gz](https://github.com/BetaHuhn/ejs-serve/archive/v1.1.0.tar.gz))
+
+### New features
+
+- [`a6aa388`](https://github.com/BetaHuhn/ejs-serve/commit/a6aa388)  Render email with mjml
+
 ## [v1.0.5] - 2021-01-11
 
 [Release notes](https://github.com/BetaHuhn/ejs-serve/releases/tag/v1.0.5) · [Compare](https://github.com/BetaHuhn/ejs-serve/compare/v1.0.4...v1.0.5) · [Tag](https://github.com/BetaHuhn/ejs-serve/tree/v1.0.5) · Archive ([zip](https://github.com/BetaHuhn/ejs-serve/archive/v1.0.5.zip) · [tar.gz](https://github.com/BetaHuhn/ejs-serve/archive/v1.0.5.tar.gz))
