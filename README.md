@@ -36,12 +36,13 @@ Usage: ejs-serve -f <filename> -d <json string|file> -p <port>
 Build, watch and serve your EJS templates in your browser.
 
 Options:
-  -f, --file <path>       path to ejs file
-  -d, --data <json>       JSON string or path to json file
-  -p, --port <number>     port on which to serve the file (default: 8080)
-  -e, --email [boolean]   render file with mjml (default: false)
-  -v, --version           output the version number
-  -h, --help              display help for command
+  -f, --file <path>           path to ejs file
+  -d, --data <json>           JSON string or path to json file
+  -p, --port <number>         port on which to serve the file (default: 8080)
+  -e, --email [boolean]       render file with mjml (default: false)
+  -o, --open [local/network]  open file in browser automatically (default: false)
+  -v, --version               output the version number
+  -h, --help                  display help for command
 ```
 
 ## 🛠️ Examples
@@ -62,6 +63,14 @@ ejs-serve -f index.ejs -d '{"message":"Hello World!"}'
 
 ```shell
 ejs-serve -f index.ejs -d data.json -p 3000
+```
+
+### Automatically open browser
+
+`ejs-serve` can automatically open the file in the browser. If you use `-o` it will open the file via its local address (localhost:port). You can use `-o network` to use the network address.
+
+```shell
+ejs-serve -f index.ejs -d data.json -p 3000 -o
 ```
 
 ### Generate email with mjml

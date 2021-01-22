@@ -14,6 +14,7 @@ program
 	.option('-d, --data <json>', 'JSON string or path to json file')
 	.option('-p, --port <number>', 'port on which to serve the file', 8080)
 	.option('-e, --email [boolean]', 'render file with mjml', false)
+	.option('-o, --open [local/network]', 'open file in browser automatically', false)
 	.action((args) => {
 		const runner = new Runner(args, program)
 		runner.serve()

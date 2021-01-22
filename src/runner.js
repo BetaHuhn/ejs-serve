@@ -11,7 +11,7 @@ class Runner {
 	}
 
 	async serve() {
-		const { file, data, port, email } = this.args
+		const { file, data, port, email, open } = this.args
 
 		if (!file) {
 			return this.program.help()
@@ -19,6 +19,12 @@ class Runner {
 
 		if (!fs.existsSync(file)) {
 			return log.fail(`error: file not found => ${ file }`)
+		}
+
+		const shouldOpen = open !== false
+		if (typeof open === 'string' && [ 'network', 'local' ].includes(open) === false) {
+			log.fail(`error: '${ open }' not valid for option --open, use network or local instead`)
+			process.exit(1)
 		}
 
 		const dataFile = fs.existsSync(data) ? data : undefined
@@ -29,17 +35,18 @@ class Runner {
 			json = JSON.parse(rawData)
 		} catch (err) {
 			log.fail(`error: failed to parse JSON => ${ data }`)
-			process.exit()
+			process.exit(1)
 		}
 
-		log.info(`[ejs-serve] starting...`)
+		log.info(`starting...`)
 		const server = new Server(port)
 
-		const network = runningAt(port).network
+		const ips = runningAt(port)
+		const ip = open === 'network' ? ips.network : ips.local
 
-		if (email === true) log.info(`[ejs-serve] using mjml...`)
+		if (email === true) log.info(`using mjml...`)
 
-		const watcher = new Watcher(file, json, dataFile, email, server, network)
+		const watcher = new Watcher(file, json, dataFile, email, server, ip, shouldOpen)
 		watcher.run()
 
 	}
