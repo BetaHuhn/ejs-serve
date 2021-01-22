@@ -1,6 +1,6 @@
 {
   "name": "ejs-serve",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Build, watch and serve your EJS templates in your browser.",
   "bin": "./src/index.js",
   "scripts": {
