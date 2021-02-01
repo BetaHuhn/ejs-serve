@@ -1,3 +1,7 @@
+## [v1.2.1] - 2021-02-01
+
+[Release notes](https://github.com/BetaHuhn/ejs-serve/releases/tag/v1.2.1) · [Compare](https://github.com/BetaHuhn/ejs-serve/compare/v1.2.0...v1.2.1) · [Tag](https://github.com/BetaHuhn/ejs-serve/tree/v1.2.1) · Archive ([zip](https://github.com/BetaHuhn/ejs-serve/archive/v1.2.1.zip) · [tar.gz](https://github.com/BetaHuhn/ejs-serve/archive/v1.2.1.tar.gz))
+
 ## [v1.2.0] - 2021-01-22
 
 [Release notes](https://github.com/BetaHuhn/ejs-serve/releases/tag/v1.2.0) · [Compare](https://github.com/BetaHuhn/ejs-serve/compare/v1.1.0...v1.2.0) · [Tag](https://github.com/BetaHuhn/ejs-serve/tree/v1.2.0) · Archive ([zip](https://github.com/BetaHuhn/ejs-serve/archive/v1.2.0.zip) · [tar.gz](https://github.com/BetaHuhn/ejs-serve/archive/v1.2.0.tar.gz))
