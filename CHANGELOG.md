@@ -1,3 +1,13 @@
+## [v1.2.4] - 2021-02-22
+
+[Release notes](https://github.com/BetaHuhn/ejs-serve/releases/tag/v1.2.4) · [Compare](https://github.com/BetaHuhn/ejs-serve/compare/v1.2.3...v1.2.4) · [Tag](https://github.com/BetaHuhn/ejs-serve/tree/v1.2.4) · Archive ([zip](https://github.com/BetaHuhn/ejs-serve/archive/v1.2.4.zip) · [tar.gz](https://github.com/BetaHuhn/ejs-serve/archive/v1.2.4.tar.gz))
+
+### Dependency updates
+
+- [`e638fe7`](https://github.com/BetaHuhn/ejs-serve/commit/e638fe7)  Bump open from 7.4.0 to 7.4.1
+- [`39570a3`](https://github.com/BetaHuhn/ejs-serve/commit/39570a3)  Bump eslint from 7.19.0 to 7.20.0
+- [`25e8794`](https://github.com/BetaHuhn/ejs-serve/commit/25e8794)  Bump open from 7.4.1 to 7.4.2
+
 ## [v1.2.3] - 2021-02-15
 
 [Release notes](https://github.com/BetaHuhn/ejs-serve/releases/tag/v1.2.3) · [Compare](https://github.com/BetaHuhn/ejs-serve/compare/v1.2.2...v1.2.3) · [Tag](https://github.com/BetaHuhn/ejs-serve/tree/v1.2.3) · Archive ([zip](https://github.com/BetaHuhn/ejs-serve/archive/v1.2.3.zip) · [tar.gz](https://github.com/BetaHuhn/ejs-serve/archive/v1.2.3.tar.gz))
