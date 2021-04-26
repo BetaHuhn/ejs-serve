@@ -1,3 +1,13 @@
+## [v1.2.13] - 2021-04-26
+
+[Release notes](https://github.com/BetaHuhn/ejs-serve/releases/tag/v1.2.13) · [Compare](https://github.com/BetaHuhn/ejs-serve/compare/v1.2.12...v1.2.13) · [Tag](https://github.com/BetaHuhn/ejs-serve/tree/v1.2.13) · Archive ([zip](https://github.com/BetaHuhn/ejs-serve/archive/v1.2.13.zip) · [tar.gz](https://github.com/BetaHuhn/ejs-serve/archive/v1.2.13.tar.gz))
+
+### Dependency updates
+
+- [`39ae083`](https://github.com/BetaHuhn/ejs-serve/commit/39ae083)  Bump running-at from 0.3.14 to 0.3.15
+- [`384b3bc`](https://github.com/BetaHuhn/ejs-serve/commit/384b3bc)  Bump ws from 7.4.4 to 7.4.5
+- [`cd5c8dc`](https://github.com/BetaHuhn/ejs-serve/commit/cd5c8dc)  Bump chalk from 4.1.0 to 4.1.1
+
 ## [v1.2.12] - 2021-04-19
 
 [Release notes](https://github.com/BetaHuhn/ejs-serve/releases/tag/v1.2.12) · [Compare](https://github.com/BetaHuhn/ejs-serve/compare/v1.2.11...v1.2.12) · [Tag](https://github.com/BetaHuhn/ejs-serve/tree/v1.2.12) · Archive ([zip](https://github.com/BetaHuhn/ejs-serve/archive/v1.2.12.zip) · [tar.gz](https://github.com/BetaHuhn/ejs-serve/archive/v1.2.12.tar.gz))
