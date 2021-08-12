@@ -32,7 +32,7 @@
     "mjml": "^4.8.1",
     "open": "^7.3.1",
     "running-at": "^0.3.5",
-    "ws": "^7.4.1"
+    "ws": "^8.1.0"
   },
   "devDependencies": {
     "@betahuhn/config": "^1.0.2",
