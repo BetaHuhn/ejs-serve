@@ -1,3 +1,11 @@
+## [v1.2.29] - 2021-09-13
+
+[Release notes](https://github.com/BetaHuhn/ejs-serve/releases/tag/v1.2.29) · [Compare](https://github.com/BetaHuhn/ejs-serve/compare/v1.2.28...v1.2.29) · [Tag](https://github.com/BetaHuhn/ejs-serve/tree/v1.2.29) · Archive ([zip](https://github.com/BetaHuhn/ejs-serve/archive/v1.2.29.zip) · [tar.gz](https://github.com/BetaHuhn/ejs-serve/archive/v1.2.29.tar.gz))
+
+### Dependency updates
+
+- [`9ef7678`](https://github.com/BetaHuhn/ejs-serve/commit/9ef7678)  Bump @betahuhn/config from 1.1.0 to 1.2.0
+
 ## [v1.2.28] - 2021-08-09
 
 [Release notes](https://github.com/BetaHuhn/ejs-serve/releases/tag/v1.2.28) · [Compare](https://github.com/BetaHuhn/ejs-serve/compare/v1.2.27...v1.2.28) · [Tag](https://github.com/BetaHuhn/ejs-serve/tree/v1.2.28) · Archive ([zip](https://github.com/BetaHuhn/ejs-serve/archive/v1.2.28.zip) · [tar.gz](https://github.com/BetaHuhn/ejs-serve/archive/v1.2.28.tar.gz))
